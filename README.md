@@ -1,6 +1,6 @@
 # Generic Form Generator
 
-<img src="images/demo.png"/>
+(http://public/demo.png)
 
 ### Available Scripts
 
