@@ -1,19 +1,10 @@
-import { Routes, Route} from "react-router-dom";
-import { Layout } from './components/Layout';
-import { Home } from './components/Home';
-import { Dashboard } from './components/Dashboard';
-import { QueryClient, QueryClientProvider } from "react-query";
-const queryClient = new QueryClient();
+import { Form } from "./form/form";
+import { formConfig } from "./state/form-config";
+import { formState } from "./state/form-state";
+import { Page } from "./style";
 
 export const App =()=> {
   return (
-    <QueryClientProvider client={queryClient}>
-    <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="dashboard" element={<Dashboard />} />
-        </Route>
-      </Routes>
-      </QueryClientProvider>
+   <Page><Form formConfig={formConfig} formState={formState}/></Page>
   );
 }

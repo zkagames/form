@@ -1,4 +1,4 @@
-# Test app
+# Generic Form Generator
 
 ### Available Scripts
 
