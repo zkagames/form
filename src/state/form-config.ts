@@ -12,8 +12,8 @@ export const formConfig:FormConfig = {
             required: true,
             model: 'metadata.name',
             validationRules: [
-            {label: 'Valid characters: a–z, 0–9, –', value: '[a-z,0-9,-]$'}, 
-            {label: 'Must begin and end with: a–z, 0–9', value: '^[a-z,0-9,-]*[a-z,0-9,-]$'},
+            {label: 'Valid characters: a–z, 0–9, –', value: '[a-z0-9-]$'}, 
+            {label: 'Must begin and end with: a–z, 0–9', value: '^[a-z0-9-]*[a-z0-9-]$'},
             {label: 'Max length: 56', value: '^.{0,56}$'}]
         },
         {
@@ -56,9 +56,9 @@ export const formConfig:FormConfig = {
         required: true,
         model: 'spec.serviceName',
         validationRules: [
-            {label: 'Valid characters: a–z, 0–9, –', value: '[a-z,0-9,-]$' },
+            {label: 'Valid characters: a–z, 0–9, –', value: '[a-z0-9-]$' },
             {label: 'Must begin with: a–z', value: '^[a-z]' },
-            {label: 'Must end with: a–z, 0–9', value: '[a-z, 0,9]$' },
+            {label: 'Must end with: a–z, 0–9', value: '[a-z0-9]$' },
             {label: 'Max length: 53', value: '^.{0,53}$' },]
     },
     {
