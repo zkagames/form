@@ -14,7 +14,7 @@ export const formConfig:FormConfig = {
             validationRules: [
             {label: 'Valid characters: a–z, 0–9, –', value: '[a-z,0-9,-]$'}, 
             {label: 'Must begin and end with: a–z, 0–9', value: '^[a-z,0-9,-]*[a-z,0-9,-]$'},
-            {label: 'Max length: 56', value: '^[a-z,0-9,-]{0,56}$'}]
+            {label: 'Max length: 56', value: '^.{0,56}$'}]
         },
         {
             id: 'description',
@@ -59,7 +59,7 @@ export const formConfig:FormConfig = {
             {label: 'Valid characters: a–z, 0–9, –', value: '[a-z,0-9,-]$' },
             {label: 'Must begin with: a–z', value: '^[a-z]' },
             {label: 'Must end with: a–z, 0–9', value: '[a-z, 0,9]$' },
-            {label: 'Max length: 53', value: '^[a-z,0-9,-]{0,53}$' },]
+            {label: 'Max length: 53', value: '^.{0,53}$' },]
     },
     {
         id: 'permissions',
